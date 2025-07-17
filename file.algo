@@ -1,7 +1,7 @@
 Algorithm count 
 Var 
 ch : string ; 
-T : array of chars:= [A,E, I, O,U,Y]; 
+T  array [1..6]of chars:= [A,E, I, O,U,Y]; 
 i, j : integer; 
 test : char 
 nbrvoewls: integer :=0; 
