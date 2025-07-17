@@ -1,0 +1,38 @@
+Algorithm count 
+Var 
+ch : string ; 
+T : array of chars:= [A,E, I, O,U,Y]; 
+i, j : integer; 
+test : char 
+nbrvoewls: integer :=0; 
+nbrwords : integer :=0;
+nbrchars : integer :=0;
+isvoyelle : boolean := false
+
+Begin 
+write ("type your sentence"); 
+read (ch); 
+i:= 1; 
+j:=0; 
+ 
+while (i<length(ch)) and (ch[i] <> ".")do {
+    test := ch[i];
+    if (test == " ") then{
+        nbrwords := nbrwords+1;
+    } 
+    j:=1;
+   repat
+    {
+        if (UperCase(test) == t[j]) then{
+            isvoyelle := true; 
+            nbrvoewls := nbrvoewls+1; 
+        }
+        j:=j+1;
+    } until (j<= length (t))or (isvoyelle==true)
+    nbrchars:=nbrchars+1;
+i:= i+1;
+}
+write ("This sentence contains"+ nbrwords+ "words"); 
+write ("This sentence contains"+ nbrchars+ "characters"); 
+write ("This sentence contains"+ nbrvoewls+ "vowels"); 
+end
